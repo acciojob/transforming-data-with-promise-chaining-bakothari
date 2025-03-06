@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     let add = res + 10
-                   output.textContent = `Result: ${add}`;
+                   output.textContent = `Final Result: ${add}`;
                 }, 1000);
             });
         });
