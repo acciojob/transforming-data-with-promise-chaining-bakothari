@@ -10,11 +10,11 @@ btn.addEventListener("click", () => {
         }, 2000);
     })
         .then((res) => {
-            output.textContent = res;
+            output.textContent = `Result: ${res}`;
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     let doubled = res * 2;
-                    output.textContent = doubled;
+                    output.textContent = `Result: ${doubled}`;
                     resolve(doubled);
                 }, 1000);
             });
@@ -23,7 +23,7 @@ btn.addEventListener("click", () => {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     let sub = res - 3;
-                    output.textContent = sub;
+                    output.textContent =`Result: ${sub}`;
                     resolve(sub);
                 }, 1000);
             });
@@ -32,7 +32,7 @@ btn.addEventListener("click", () => {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     let div = res / 2;
-                    output.textContent = div;
+                    output.textContent = `Result: ${div}`;
                     resolve(div);
                 }, 1000);
             });
@@ -41,7 +41,7 @@ btn.addEventListener("click", () => {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
                     let add = res + 10
-                   output.textContent = add;
+                   output.textContent = `Result: ${add}`;
                 }, 1000);
             });
         });
