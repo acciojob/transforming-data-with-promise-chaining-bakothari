@@ -1,4 +1,3 @@
-//your JS code here. If required.
 let btn = document.getElementById("btn");
 let output = document.getElementById("output");
 
@@ -41,7 +40,8 @@ btn.addEventListener("click", () => {
         .then((res) => {
             return new Promise((resolve, reject) => {
                 setTimeout(() => {
-                   output.textContent = res;
+                    let add = res + 10
+                   output.textContent = add;
                 }, 1000);
             });
         });
